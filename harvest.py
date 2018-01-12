@@ -123,10 +123,15 @@ def make_melons(melon_types):
 
     return harvested_melons
 
-def get_sellability_report(melons):
+def get_sellability_report(harvested_melons):
     """Given a list of melon object, prints whether each one is sellable."""
 
-    # Fill in the rest 
+    for melon in harvested_melons:
+        print "Harvested by " + melon.harvester
+        print "Field: " + melon.field
+        print "Sellable: " + melon.is_sellable()
+        
+
 
 
 
